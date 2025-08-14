@@ -74,11 +74,11 @@ app.post('/save_progress', (req, res) => {
       from: 'inhisfavor4ever@gmail.com',
       to: saveEmail,
       subject: 'Your Cost Calculator Link',
-      text: `Thank you for saving Cost Calculator. Please use the unique link below to return to the form from any computer:\n\nhttps://liftedlogic.com/cost-calculator/?gf_token=${token}`,
+      text: `Thank you for saving Cost Calculator. Please use the unique link below to return to the form from any computer:\n\nhttp://localhost:3000/?gf_token=${token}`,
       html: `
       <p>Thank you for saving Cost Calculator. Please use the unique link below to return to the form from any computer:</p>
-      <p><a href="http://localhost:5000/?gf_token=${token}">
-      http://localhost:5000/?gf_token=${token}</a></p>
+      <p><a href="http://localhost:3000/?gf_token=${token}">
+      http://localhost:3000/?gf_token=${token}</a></p>
     `
     };
 
